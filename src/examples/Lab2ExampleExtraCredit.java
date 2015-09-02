@@ -1,7 +1,7 @@
 package examples;
 import java.util.Random;
 
-public class Lab2Example 
+public class Lab2ExampleExtraCredit 
 {
 
 	public static void main(String[] args) 
@@ -14,16 +14,22 @@ public class Lab2Example
 			String threeMer = "";
 			for(int m = 0; m<3;m++)
 			{
-				switch (random.nextInt(4))
+				float f = random.nextFloat();
+				if (f<.12)
 				{
-					case 0: threeMer += "A";
-					break;
-					case 1: threeMer += "C";
-					break;
-					case 2: threeMer += "G";
-					break;
-					case 3: threeMer += "T";
-					break;					
+					threeMer +="A";
+				}
+				else if (f < .50)
+				{
+					threeMer += "C";
+				}
+				else if (f < .89)
+				{
+					threeMer += "G";
+				}
+				else
+				{
+					threeMer += "T";
 				}
 			}
 			if (threeMer.equals("AAA"))
@@ -35,10 +41,10 @@ public class Lab2Example
 		}
 		System.out.println("The three-mer AAA appears "+counter+" times.");
 	/*
-	 * Theoretical value should be around 15-16 Times
+	 * Theretical value should be around 15-16 Times
 	 * P1*P2*P3*1000
-	 * PN = probability of N being an A = .25
-	 * = .25*.25*.25*1000 = 15.625
+	 * PN = probability of N being an A = .12
+	 * = .12*.12*.12*1000 = 1.728
 	 */
 	
 	
