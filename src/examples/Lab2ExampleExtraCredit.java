@@ -41,7 +41,7 @@ public class Lab2ExampleExtraCredit
 		}
 		System.out.println("The three-mer AAA appears "+counter+" times.");
 	/*
-	 * Theretical value should be around 15-16 Times
+	 * Theoretical value should be around 15-16 Times
 	 * P1*P2*P3*1000
 	 * PN = probability of N being an A = .12
 	 * = .12*.12*.12*1000 = 1.728
