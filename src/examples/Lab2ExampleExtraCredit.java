@@ -15,15 +15,15 @@ public class Lab2ExampleExtraCredit
 			for(int m = 0; m<3;m++)
 			{
 				float f = random.nextFloat();
-				if (f<.12)
+				if (f<=.12)
 				{
 					threeMer +="A";
 				}
-				else if (f < .50)
+				else if (f <= .50)
 				{
 					threeMer += "C";
 				}
-				else if (f < .89)
+				else if (f <= .89)
 				{
 					threeMer += "G";
 				}
@@ -41,12 +41,11 @@ public class Lab2ExampleExtraCredit
 		}
 		System.out.println("The three-mer AAA appears "+counter+" times.");
 	/*
-	 * Theoretical value should be around 15-16 Times
+	 * Theoretical value should be around 1-2 Times
 	 * P1*P2*P3*1000
 	 * PN = probability of N being an A = .12
 	 * = .12*.12*.12*1000 = 1.728
 	 */
-	
 	
 	}
 
